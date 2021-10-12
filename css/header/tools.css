@@ -1,0 +1,51 @@
+.tools {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.tools__item {
+    position: relative;
+    width: 24px;
+    height: 21px;
+    background-size: 16px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.tools__item:hover {
+    background-color: rgb(232, 239, 247);
+}
+
+.tools__item:not(.tools__item_active):hover:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border: 1px solid rgb(164, 206, 249);
+    content: '';
+}
+
+.tools__item.tools__item_active {
+    border: 1px solid rgb(98, 162, 228);
+    background-color: rgb(201, 224, 247);
+}
+
+/**
+    Модификаторы
+ */
+.tools__item.tools__item_pencil {
+    background-image: url("../../img/header/pencil.svg");
+}
+
+.tools__item.tools__item_fill {
+    background-image: url("../../img/header/fill.svg");
+}
+
+.tools__item.tools__item_eraser {
+    background-image: url("../../img/header/eraser.svg");
+}

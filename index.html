@@ -6,15 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web-paint</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="body">
-    <header class="header"></header>
+    <header class="header">
+        <div class="nav">
+            <div class="nav__item">
+                <ul class="tools">
+                    <li class="tools__item tools__item_pencil tools__item_active"></li>
+                    <li class="tools__item tools__item_eraser"></li>
+<!--                    <li class="tools__item tools__item_fill"></li>-->
+                </ul>
+            </div>
+        </div>
+    </header>
     <canvas class="canvas" id="canvas" width="1200" height="760">
         Ваш браузер не поддерживает Canvas
     </canvas>
     <footer class="footer"></footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>
